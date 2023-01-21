@@ -6,7 +6,6 @@ path = pwd;
 
 egriplat = 75.63;
 egriplon = -35.99;
-%S = shaperead('../../../../data/AWI_radar2018/egripnor2018_frames_epsg3413.shp');
 
 %%
 wgs84 = almanac('earth','wgs84','meters');
@@ -26,8 +25,8 @@ for i = 1:n
         varName = A(i).name;
         cpname =  ['cp',varName(3:end-16)];
         cpin = find(strcmp([cpidx{:}], cpname)) ;
-        cpradar = load(['~/Documents/university_copenhagen/PhD_project/gprMax/gprmax_eastgripmodel/data/AWI_radar2018/',crossfile{cpin}]);
-        lpradar = load(['~/Documents/university_copenhagen/PhD_project/gprMax/gprmax_eastgripmodel/data/AWI_radar2018/',longfile{cpin}]);
+        cpradar = load(['*****/AWI_radar2018/',crossfile{cpin}]);           % adjust path to radar data
+        lpradar = load(['*****/AWI_radar2018/',longfile{cpin}]);            % adjust path to radar data
         [cpxcor cpycor] = polarstereo_fwd(cpradar.Latitude,cpradar.Longitude, 6378137.0,0.08181919,70,-45);
         [lpxcor lpycor] = polarstereo_fwd(lpradar.Latitude,lpradar.Longitude, 6378137.0,0.08181919,70,-45);
 

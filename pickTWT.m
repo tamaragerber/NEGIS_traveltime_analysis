@@ -3,7 +3,6 @@ clear all
 close all
 path = pwd;
 
-
 mode = 1;               % 0 = raw data / 1 = spline interpolated 
 stacked = 0;            % 0 = single trace / 1 = stacked
 
@@ -18,7 +17,7 @@ lpname = char(Q{k,3});
 
 
 % change to radar data directory
-cd ~/Documents/university_copenhagen/PhD_project/gprMax/gprmax_eastgripmodel/data/AWI_radar2018
+cd ****/AWI_radar2018                       % adjust path to radar data 
 
 % load radarfiles
 cp = load(cpname);      % flowtransverse
@@ -111,8 +110,6 @@ else
     fig = figure();
     plot(lp_trace,lp_time,'r','DisplayName','parallel');hold on
     plot(cp_trace,cp_time,'b','DisplayName','perpendicular');
-    plot([0 500],[reflectors_nonan.twt_gprMax_par,reflectors_nonan.twt_gprMax_par],'r')
-    plot([0 500],[reflectors_nonan.twt_gprMax_per,reflectors_nonan.twt_gprMax_per],'b')
 end
 
 axis ij
@@ -180,8 +177,6 @@ if dat==0
     n = 0;
     m = 0;
 end
-   % plot([0 500],[reflectors_nonan.twt_gprMax_par,reflectors_nonan.twt_gprMax_par],'r')
-   % plot([0 500],[reflectors_nonan.twt_gprMax_per,reflectors_nonan.twt_gprMax_per],'b')
     axis ij
     axis([50 450 0 5]);
     xlabel('dB')

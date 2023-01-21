@@ -2,6 +2,13 @@
 
 These scripts were used to infer horizontal anisotropy from airborne radar crosspoints in the Northeast Greenland Ice Stream (NEGIS) which are published in Gerber et al., (2023), Crystal orientation fabric anisotropy causes directional hardening of the Northeast Greenland Ice Stream, Nature Communications
 
+In order to reproduce the results in the publication above, you additionally need the following data:
+- If you want to pick reflections yourself you'll need to download the airborne radar data from PANGAEA (https://doi.org/10.1594/PANGAEA.928569) 
+- If you want to continue without picking reflections yourself you can find those on the ERDA archive (https://doi.org/????) under 'raw_data/crosspoint_traveltime_analysis/
+- 	the folder 'TWT_picks' contains individual files for each crosspoint
+- 	CP_raw.mat contains the raw data of picked reflections
+- 	CP.mat is contains the processed data, including the calculated horizontal anisotropy.
+
 
 
 1) pick reflections in orthogonal polarization

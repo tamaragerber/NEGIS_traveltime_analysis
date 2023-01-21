@@ -10,7 +10,7 @@ In order to reproduce the results in the publication above, you additionally nee
 	- **CP_raw.mat** contains the raw data of picked reflections
 	- **CP.mat** is contains the processed data, including the calculated horizontal anisotropy.
 
-Note that you'll need to adjust the corresponding paths where marked with ****
+Note that you'll need to adjust the lines marked with ***** in the scripts with the corresponding path to the data files. 
 
 ## Script overview
 

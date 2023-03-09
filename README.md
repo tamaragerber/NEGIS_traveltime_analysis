@@ -1,15 +1,15 @@
 # Crystal orientation fabric anisotropy causes directional hardening of the Northeast Greenland Ice Stream
 ## Travel-time analysis
 
-These scripts were used to infer horizontal anisotropy from airborne radar crosspoints in the Northeast Greenland Ice Stream (NEGIS) which are published in Gerber et al., (2023), Crystal orientation fabric anisotropy causes directional hardening of the Northeast Greenland Ice Stream, Nature Communications
+These scripts were used to derive the depth-average horizontal anisotropy from airborne radar crosspoints in the Northeast Greenland Ice Stream (NEGIS) which are published in Gerber et al., (2023), Crystal orientation fabric anisotropy causes directional hardening of the Northeast Greenland Ice Stream, Nature Communications
 
 ## Script overview
 
-1) pick reflections in orthogonal polarization
+1) pick reflections in orthogonal wave polarization
 
-	- `pickTWT.m`: picks travel times for reflections in two polarization directions.
+	- `pickTWT.m`: script to manually pick travel times for reflections in two polarization directions.
 	- crosspoint name and corresponding profiles are read from **crosspoints.xlsx**	
-	- save files for each crosspoint with the travel times in **TWTpicks/cp*_int1_stack0.mat**
+	- save files for each crosspoint with the travel times in **TWTpicks/cp\*_int1_stack0.mat**
 
 2) combine all cp files in TWTpicks to one CP_raw.mat	
 	
@@ -38,6 +38,6 @@ In order to reproduce the results in the publication above, you additionally nee
 - If you want to continue without picking reflections yourself you can find those on the ERDA archive (https://doi.org/????) under *raw_data/crosspoint_traveltime_analysis/*
 	- the folder **TWT_picks** contains individual files for each crosspoint
 	- **CP_raw.mat** contains the raw data of picked reflections
-	- **CP.mat** is contains the processed data, including the calculated horizontal anisotropy.
+	- **CP.mat** contains the processed data, including the calculated horizontal anisotropy.
 
 Note that you'll need to adjust the lines marked with ***** in the scripts with the corresponding path to the data files. 

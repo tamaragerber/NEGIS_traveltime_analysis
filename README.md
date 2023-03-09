@@ -22,8 +22,8 @@ These scripts were used to derive the depth-average horizontal anisotropy from a
 		1) determine reflector depth with DEP-approximated permittivity profile, which is 
 		   transformed into velocity
 
-		2) discard reflections where $\Delta$twt is larger than for a monocrystal at the corresponding depth, 
-		are shallower than 200 m, or $\Delta$twt is more than 2 standar deviations away from mean trend.
+		2) discard reflections where $\Delta$ twt is larger than for a monocrystal at the corresponding depth, 
+		are shallower than 200 m, or $\Delta$ twt is more than 2 standard deviations away from the mean trend.
 
 		3) determine depth-average dielectric permittivity for each polarization by linear regression through 0 m, 200 m and 500 m
 
@@ -33,6 +33,7 @@ These scripts were used to derive the depth-average horizontal anisotropy from a
 	
 
 ## Additional data
+
 In order to reproduce the results in the publication above, you additionally need the following data:
 - If you want to pick reflections yourself you'll need to download the airborne radar data from PANGAEA (https://doi.org/10.1594/PANGAEA.928569) 
 - If you want to continue without picking reflections yourself you can find those on the ERDA data archive (https://doi.org/????) under *raw_data/crosspoint_traveltime_analysis/*

@@ -36,7 +36,7 @@ These scripts were used to derive the depth-average horizontal anisotropy from a
 
 In order to reproduce the results in the publication above, you additionally need the following data:
 - If you want to pick reflections yourself you'll need to download the airborne radar data from PANGAEA (https://doi.org/10.1594/PANGAEA.928569) 
-- If you want to continue without picking reflections yourself you can find those on the ERDA data archive (https://doi.org/????) under *raw_data/crosspoint_traveltime_analysis/*
+- If you want to continue without picking reflections yourself you can find those on the ERDA data archive (https://doi.org/10.17894/ucph.ed9a1a1f-d6e6-41d5-894c-7e526f75fdd7) under *raw_data/crosspoint_traveltime_analysis/*
 	- the folder **TWT_picks** contains individual files for each crosspoint
 	- **CP_raw.mat** contains the raw data of picked reflections
 	- **CP.mat** contains the processed data, including the calculated horizontal anisotropy.
